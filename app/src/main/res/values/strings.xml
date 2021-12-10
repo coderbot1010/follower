@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Follower</string>
+    <string name="error">Something went wrong! … please try again later</string>
+    <string name="ok">OK</string>
+</resources>

@@ -1,0 +1,29 @@
+CREATE TABLE User(
+    id INTEGER PRIMARY KEY,
+    email TEXT,
+    first_name TEXT,
+    last_name TEXT,
+    avatar TEXT
+);
+
+CREATE TABLE Followed(
+    id INTEGER PRIMARY KEY
+);
+
+selectAllUsers:
+SELECT * FROM User;
+
+selectAllFollowerdUsers:
+SELECT * FROM Followed;
+
+insertUser:
+INSERT OR REPLACE INTO User (id, email, first_name, last_name, avatar) VALUES (?, ?, ?, ?, ?);
+
+insertFullUserObject:
+INSERT OR REPLACE INTO User (id, email, first_name, last_name, avatar) VALUES ?;
+
+insertFollowedUser:
+INSERT OR REPLACE INTO Followed (id) VALUES (?);
+
+removeFollowedUser:
+DELETE FROM Followed WHERE id = ?;
