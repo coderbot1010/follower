@@ -11,8 +11,8 @@ class FollowUnfollowUser constructor(private val repository: UserRepository)
         users.forEach { user ->
             if (user.id == id)
             {
-                if (user.followed) repository.unfollowUsers(id)
-                else repository.followUsers(id)
+                if (user.followed) repository.unfollowUser(id)
+                else repository.followUser(id)
                 user.followed = !user.followed
             }
         }

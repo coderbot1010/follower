@@ -28,7 +28,7 @@ class UserRepositoryImplementation constructor(private val database: DatabaseQue
 
     override suspend fun getFollowedUsers(): MutableList<Long> = database.selectAllFollowerdUsers().executeAsList().toMutableList()
 
-    override suspend fun followUsers(id: Int) = database.insertFollowedUser(id.toLong())
+    override suspend fun followUser(id: Int) = database.insertFollowedUser(id.toLong())
 
-    override suspend fun unfollowUsers(id: Int) = database.removeFollowedUser(id.toLong())
+    override suspend fun unfollowUser(id: Int) = database.removeFollowedUser(id.toLong())
 }

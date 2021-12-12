@@ -10,7 +10,7 @@ interface UserRepository
 
     suspend fun getFollowedUsers(): MutableList<Long>
 
-    suspend fun followUsers(id: Int)
+    suspend fun followUser(id: Int)
 
-    suspend fun unfollowUsers(id: Int)
+    suspend fun unfollowUser(id: Int)
 }
