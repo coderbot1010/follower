@@ -1,7 +1,6 @@
 package com.coderbot.follower
 
-import com.coderbot.follower.domain.usecase.FollowUnfollowUserTest
-import com.coderbot.follower.domain.usecase.GetUsersTest
+import com.coderbot.follower.domain.usecase.*
 import org.junit.runner.RunWith
 import org.junit.runners.Suite
 
