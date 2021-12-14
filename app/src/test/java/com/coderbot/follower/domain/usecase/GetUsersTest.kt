@@ -1,8 +1,7 @@
-package com.coderbot.follower
+package com.coderbot.follower.domain.usecase
 
 import com.coderbot.follower.data.model.User
 import com.coderbot.follower.domain.repository.UserRepository
-import com.coderbot.follower.domain.usecase.GetUsers
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert
 import org.junit.Before
