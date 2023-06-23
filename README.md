@@ -5,6 +5,7 @@
 - Topics:
   * Clean Architecture: 3 Layers (Presentation, Domain, Data) Layers.
   * Presentation Layer:
+    * JetPack Compose.
     * View-Model.
     * MVI Presentation Architecture Pattern.
   * Domain Layer:
